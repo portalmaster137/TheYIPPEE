@@ -2,10 +2,8 @@ package com.porta137.theyippee;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -31,9 +29,7 @@ public class TheYIPPEE implements ModInitializer {
     private static final ItemGroup YIPPEE_GROUP = FabricItemGroup.builder()
             .icon(() -> new ItemStack(YIPPIE_ITEM))
             .displayName(Text.translatable("itemGroup.theyippee.group"))
-            .entries((ctx,ent) -> {
-                ent.add(YIPPIE_ITEM);
-            })
+            .entries((ctx,ent) -> ent.add(YIPPIE_ITEM))
             .build();
 
     public void registerItemGroups() {
