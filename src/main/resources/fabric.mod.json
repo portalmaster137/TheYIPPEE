@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "theyippee",
+  "version": "${version}",
+  "name": "TheYIPPEE",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/porta/TheYIPPEE"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/theyippee/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.porta137.theyippee.client.TheYIPPEEClient"
+    ],
+    "main": [
+      "com.porta137.theyippee.TheYIPPEE"
+    ]
+  },
+  "mixins": [
+    "theyippee.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
