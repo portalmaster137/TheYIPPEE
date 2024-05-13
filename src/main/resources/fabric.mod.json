@@ -13,7 +13,6 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "com.porta137.theyippee.client.TheYIPPEEClient"
     ],
     "main": [
       "com.porta137.theyippee.TheYIPPEE"

@@ -1,5 +1,6 @@
 package com.porta137.theyippee;
 
+import com.porta137.theyippee.items.YippeeItem;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.Item;

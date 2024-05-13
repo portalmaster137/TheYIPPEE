@@ -1,5 +1,6 @@
-package com.porta137.theyippee;
+package com.porta137.theyippee.items;
 
+import com.porta137.theyippee.TheYIPPEE;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
