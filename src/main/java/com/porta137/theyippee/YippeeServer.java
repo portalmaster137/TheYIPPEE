@@ -1,6 +1,10 @@
 package com.porta137.theyippee;
 
+import com.porta137.theyippee.entity.ModEntities;
+import com.porta137.theyippee.entity.custom.YippeeCreature;
+import com.porta137.theyippee.util.Constants;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -9,7 +13,7 @@ import org.slf4j.LoggerFactory;
 
 
 
-public class TheYIPPEE implements ModInitializer {
+public class YippeeServer implements ModInitializer {
 
 
 
@@ -26,7 +30,7 @@ public class TheYIPPEE implements ModInitializer {
         Registry.register(Registries.SOUND_EVENT, Constants.YIPPIE_SOUND_ID, Constants.YIPPEE_SOUND);
     }
 
-    Logger logger = LoggerFactory.getLogger(TheYIPPEE.class);
+    Logger logger = LoggerFactory.getLogger(YippeeServer.class);
 
     @Override
     public void onInitialize() {
@@ -34,6 +38,8 @@ public class TheYIPPEE implements ModInitializer {
         registerItemGroups();
         registerItems();
         registerSounds();
+
+        FabricDefaultAttributeRegistry.register(ModEntities.YIPPEE_CREATURE_ENTITY_TYPE, YippeeCreature.setAttributes());
 
         logger.info("Yippee! The YIPPEE is initialized!");
     }

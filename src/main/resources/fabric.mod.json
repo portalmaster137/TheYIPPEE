@@ -13,9 +13,10 @@
   "environment": "*",
   "entrypoints": {
     "client": [
+      "com.porta137.theyippee.YippeeClient"
     ],
     "main": [
-      "com.porta137.theyippee.TheYIPPEE"
+      "com.porta137.theyippee.YippeeServer"
     ]
   },
   "mixins": [

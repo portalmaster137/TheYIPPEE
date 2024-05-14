@@ -1,6 +1,6 @@
 package com.porta137.theyippee.items;
 
-import com.porta137.theyippee.Constants;
+import com.porta137.theyippee.util.Constants;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;

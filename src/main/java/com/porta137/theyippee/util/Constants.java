@@ -1,4 +1,4 @@
-package com.porta137.theyippee;
+package com.porta137.theyippee.util;
 
 import com.porta137.theyippee.items.YippeeItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -10,6 +10,8 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class Constants {
+
+    public static final String MOD_ID = "theyippee";
 
     public static final Identifier YIPPIE_SOUND_ID = new Identifier("theyippee:yippee_sound");
     public static SoundEvent YIPPEE_SOUND = SoundEvent.of(YIPPIE_SOUND_ID);
