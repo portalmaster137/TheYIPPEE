@@ -1,6 +1,6 @@
 package com.porta137.theyippee.items;
 
-import com.porta137.theyippee.TheYIPPEE;
+import com.porta137.theyippee.Constants;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -21,7 +21,7 @@ public class YippeeItem extends Item {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        user.playSound(TheYIPPEE.YIPPEE_SOUND, 1.0F, 1.0F);
+        user.playSound(Constants.YIPPEE_SOUND, 1.0F, 1.0F);
         return TypedActionResult.success(user.getStackInHand(hand));
     }
 
