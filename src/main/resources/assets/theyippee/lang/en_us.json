@@ -1,5 +1,6 @@
 {
   "item.theyippee.yippee": "Yippee!",
   "item.theyippee.yippee.tooltip": "He Gave Me A Yippee!",
-  "itemGroup.theyippee.group": "Yippee!"
+  "itemGroup.theyippee.group": "Yippee!",
+  "entity.theyippee.yippee_creature": "Yippee Creature"
 }
