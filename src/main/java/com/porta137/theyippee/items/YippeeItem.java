@@ -1,5 +1,7 @@
 package com.porta137.theyippee.items;
 
+import com.porta137.theyippee.entity.ModEntities;
+import com.porta137.theyippee.entity.custom.YippeeCreature;
 import com.porta137.theyippee.util.Constants;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
@@ -22,7 +24,13 @@ public class YippeeItem extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         user.playSound(Constants.YIPPEE_SOUND, 1.0F, 1.0F);
+
+        YippeeCreature entity = new YippeeCreature(ModEntities.YIPPEE_CREATURE_ENTITY_TYPE, world);
+        entity.setPosition(user.getPos());
+        world.spawnEntity(entity);
+
         return TypedActionResult.success(user.getStackInHand(hand));
+
     }
 
     @Override
